@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protege tus Mensajes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Protege tus Mensajes</h1>
+    </header>
+    <main>
+        <div class="container">
+            <section class="input-section">
+                <h2>Cifrar/Descifrar Texto</h2>
+                <textarea id="inputText" placeholder="Ingresa el texto aquí..."></textarea>
+                <p class="input-message">Solo letras minúsculas y sin acento</p>
+                <div class="buttons">
+                    <button class="encrypt-btn" onclick="encryptText()">Encriptar</button>
+                    <button class="decrypt-btn" onclick="decryptText()">Desencriptar</button>
+                </div>
+                <div id="validationMessage" class="validation-message" style="display: none;"></div>
+            </section>
+            <section class="output-section" id="outputSection" style="display: none;">
+                <h2>Texto encriptado</h2>
+                <textarea id="outputText" placeholder="Resultado..." readonly></textarea>
+                <div class="output-buttons">
+                    <button class="copy-btn" onclick="copyText()">Copiar</button>
+                    <button class="clear-btn" onclick="clearOutput()">Limpiar Recuadro</button>
+                </div>
+                <img src="./assets/Mensaje no encontrado.png" alt="Mensaje no encontrado" class="not-found-image">
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sergio Carey</p>
+        <div class="social-links">
+            <a href="https://github.com/SC-Sergio" target="_blank">
+                <img src="./assets/github.png" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/sergio-enrique-carey-alegre-58b318174/" target="_blank">
+                <img src="./assets/linkedin.png" alt="LinkedIn">
+            </a>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
+
